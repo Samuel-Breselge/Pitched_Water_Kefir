@@ -11,7 +11,7 @@ library(multcompView)
 library(here)
 
 # Import data ----
-df_01 <- read_excel(here("data", "Fermentation_data.xlsx"))
+df_01 <- read_excel(here("data", "Data_fermentations.xlsx"))
 
 # Harmonise names ----
 df_01$Bif <- gsub("Bifidobacterium fermentum \\(B2\\)", "B. fermentum", df_01$Bif)
