@@ -1,0 +1,73 @@
+sample,Ethanol,Fructose,Glucose,Glycerol,Mannitol,Sucrose,Lactic_Acid,Acetic_Acid,experimental set,set name,Bif,Yeast,LAB,AAB,other,short_name,grains
+fSB008,259.034,6769.138,3053.488,105.12,1212.938,60072.017,446.702,530.011,set1,B.044,B. fermentum,Br. bruxellensis,Len. hilgardii,G. oxydans,none,B.044 B.bru L.hil G.oxy,NA
+fSB024,5927.975,3880.596,1086.774,1045.702,544.767,84302.004,790.667,1040.532,set1,B.044,B. fermentum,H. valbyensis,Len. hilgardii,G. oxydans,none,B.044 H.val L.hil G.oxy,NA
+fSB038,7410.871,2131.199,602.069,1306.458,185.117,75032.712,186.351,713.121,set1,B.044,B. fermentum,P. fermentans,Len. hilgardii,A. orientalis,none,B.044 P.fer L.hil A.ori,NA
+fSB040,6925.692,2457.387,670.473,1104.208,204.07,76535.034,311.167,211.985,set1,B.044,B. fermentum,P. fermentans,Len. hilgardii,G. oxydans,none,B.044 P.fer L.hil G.oxy,NA
+fSB043,6088.885,4659.036,495.22,908.355,280.638,68625.948,1086.504,3261.874,set1,B.044,B. fermentum,P. fermentans,Leu. pseudomesenteroides,G. japonicus,none,B.044 P.fer L.pse G.jap,NA
+fSB052,5471.677,19730.059,15476.916,651.338,168.061,39509.719,408.704,510.27,set1,B.044,B. fermentum,S. cerevisiae,Lac. paracasei,G. oxydans,none,B.044 S.cer L.par G.oxy,NA
+fSB053,4333.725,11476.415,8098.63,1148.744,586.963,60343.767,264.705,2334.473,set1,B.044,B. fermentum,S. cerevisiae,Len. hilgardii,A. lovaniensis,none,B.044 S.cer L.hil A.lov,NA
+fSB054,5989.516,12147.06,9479.107,1220.754,613.978,63881.869,367.708,318.162,set1,B.044,B. fermentum,S. cerevisiae,Len. hilgardii,A. orientalis,none,B.044 S.cer L.hil A.ori,NA
+fSB055,4636.796,12324.012,4736.533,821.76,393.583,48602.474,272.909,1260.853,set1,B.044,B. fermentum,S. cerevisiae,Len. hilgardii,G. japonicus,none,B.044 S.cer L.hil G.jap,NA
+fSB056,7129.118,21565.938,13001.43,947.264,572.412,57425.949,360.646,1133.48,set1,B.044,B. fermentum,S. cerevisiae,Len. hilgardii,G. oxydans,none,B.044 S.cer L.hil G.oxy,NA
+fSB060,5298.396,15095.656,9083.49,706.802,1426.348,32265.953,803.685,868.264,set1,B.044,B. fermentum,S. cerevisiae,Leu. pseudomesenteroides,G. oxydans,none,B.044 S.cer L.pse G.oxy,NA
+fSB062,7607.907,15465.94,8200.963,943.328,179.486,56905.701,489.448,235.879,set1,B.044,B. fermentum,S. cerevisiae,Liq. satsumensis,A. orientalis,none,B.044 S.cer L.sat A.ori,NA
+fSB064,5553.809,20182.611,11440.353,673.879,183.204,56529.596,385.746,444.709,set1,B.044,B. fermentum,S. cerevisiae,Liq. satsumensis,G. oxydans,none,B.044 S.cer L.sat G.oxy,NA
+fSB133,9211.189,1352.298,282.137,183.628,67.353,71021.989,797.192,2667.678,set3,B.041+Z.mob,B. aquikefiricola,Br. bruxellensis,Lac. paracasei,A. lovaniensis,Z. mobilis,B.041 B.bru L.par A.lov Z.mob,NA
+fSB134,7280.908,1423.77,355.824,156.819,NA,59059.267,586.946,2501.521,set3,B.041+Z.mob,B. aquikefiricola,Br. bruxellensis,Lac. paracasei,A. orientalis,Z. mobilis,B.041 B.bru L.par A.ori Z.mob,NA
+fSB135,4477.151,3998.828,1161.522,54.891,NA,52644.037,391.376,4023.68,set3,B.041+Z.mob,B. aquikefiricola,Br. bruxellensis,Lac. paracasei,G. japonicus,Z. mobilis,B.041 B.bru L.par G.jap Z.mob,NA
+fSB141,9438.48,3407.536,870.014,1170.688,132.64,61568.78,477.058,325.496,set3,B.041+Z.mob,B. aquikefiricola,P. fermentans,Lac. paracasei,A. lovaniensis,Z. mobilis,B.041 P.fer L.par A.lov Z.mob,NA
+fSB151,1992.597,5872.823,834.024,136.341,363.986,70101.231,408.997,4216.136,set3,B.041+Z.mob,B. aquikefiricola,Br. bruxellensis,Len. hilgardii,G. japonicus,Z. mobilis,B.041 B.bru L.hil G.jap Z.mob,NA
+fSB155,7401.33,1631.152,1557.294,506.504,95.528,72133.471,492.223,3940.675,set3,B.041+Z.mob,B. aquikefiricola,H. valbyensis,Len. hilgardii,G. japonicus,Z. mobilis,B.041 H.val L.hil G.jap Z.mob,NA
+fSB164,13906.42,9533.822,2350.057,546.63,490.444,42533.719,248.973,2406.302,set3,B.041+Z.mob,B. aquikefiricola,S. cerevisiae,Len. hilgardii,G. oxydans,Z. mobilis,B.041 S.cer L.hil G.oxy Z.mob,NA
+fSB165,7351.626,9259.215,517.895,262.178,3112.432,48515.147,1859.952,3282.953,set3,B.041+Z.mob,B. aquikefiricola,Br. bruxellensis,Leu. pseudomesenteroides,A. lovaniensis,Z. mobilis,B.041 B.bru L.pse A.lov Z.mob,NA
+fSB166,7310.479,10179.036,959.012,379.929,2992.799,46692.788,1453.464,3249.651,set3,B.041+Z.mob,B. aquikefiricola,Br. bruxellensis,Leu. pseudomesenteroides,A. orientalis,Z. mobilis,B.041 B.bru L.pse A.ori Z.mob,NA
+fSB179,13091.909,12243.452,2206.941,733.413,984.188,41658.454,1128.442,1670.335,set3,B.041+Z.mob,B. aquikefiricola,S. cerevisiae,Leu. pseudomesenteroides,G. japonicus,Z. mobilis,B.041 S.cer L.pse G.jap Z.mob,NA
+fSB183,2101.331,6509.186,2165.407,104.531,0,70839.758,983.879,4576.956,set3,B.041+Z.mob,B. aquikefiricola,Br. bruxellensis,Liq. satsumensis,G. japonicus,Z. mobilis,B.041 B.bru L.sat G.jap Z.mob,NA
+fSB185,11238.968,2983.295,603.438,714.781,92.435,53125.026,1461.078,1321.961,set3,B.041+Z.mob,B. aquikefiricola,H. valbyensis,Liq. satsumensis,A. lovaniensis,Z. mobilis,B.041 H.val L.sat A.lov Z.mob,NA
+fSB191,7571.809,1740.792,407.381,701.929,73.402,63241.373,686.247,2467.027,set3,B.041+Z.mob,B. aquikefiricola,P. fermentans,Liq. satsumensis,G. japonicus,Z. mobilis,B.041 P.fer L.sat G.jap Z.mob,NA
+fSB197,12837.458,12047.678,4563.275,1356.451,451.026,31872.106,2026.493,1561.01,set3,B.041+Z.mob,WK grains,WK grains,WK grains,WK grains,WK grains,WK grains (120g/L),WK grains (120g/L)
+fSB198,10730.475,13231.168,5035.899,1345.216,342.498,33667.485,1804.115,1597.487,set3,B.041+Z.mob,WK grains,WK grains,WK grains,WK grains,WK grains,WK grains (60g/L),WK grains (60g/L)
+fSB199,10229.905,12815.025,6501.699,983.168,313.949,41170.035,1372.931,1232.478,set3,B.041+Z.mob,WK grains,WK grains,WK grains,WK grains,WK grains,WK grains (30g/L),WK grains (30g/L)
+fSB200,6697.135,9507.884,3563.564,1231.375,140.817,41665.342,1168.363,1316.979,set3,B.041+Z.mob,WK grains,WK grains,WK grains,WK grains,WK grains,WK grains (15g/L),WK grains (15g/L)
+fSB201,685.621,10289.193,8954.232,89.65,67.803,61781.12,863.665,1242.807,set4,B.041,B. aquikefiricola,Br. bruxellensis,Lac. paracasei,A. lovaniensis,none,B.041 B.bru L.par A.lov,NA
+fSB207,6947.309,1902.674,356.318,1371.474,86.851,59672.828,389.551,680.864,set4,B.041,B. aquikefiricola,P. fermentans,Lac. paracasei,A. orientalis,none,B.041 P.fer L.par A.ori,NA
+fSB212,6130.753,19047.376,8319.429,565.655,0,43675.718,262.111,2112.145,set4,B.041,B. aquikefiricola,S. cerevisiae,Lac. paracasei,G. japonicus,none,B.041 S.cer L.par G.jap,NA
+fSB220,6113.806,16176.546,12030.189,845.945,821.928,51192.176,306.866,2200.346,set4,B.041,B. aquikefiricola,S. cerevisiae,Len. hilgardii,A. lovaniensis,none,B.041 S.cer L.hil A.lov,NA
+fSB232,6803.22,15268.008,6729.154,737.445,229.418,43779.829,291.939,739.272,set4,B.041,B. aquikefiricola,S. cerevisiae,Len. hilgardii,G. oxydans,none,B.041 S.cer L.hil G.oxy,NA
+fSB233,13350.747,13367.143,5550.67,1490.715,530.985,24323.917,1768.1,598.387,set4,B.041,WK grains,WK grains,WK grains,WK grains,WK grains,WK grains (120g/L),WK grains (120g/L)
+fSB234,6006.798,13565.154,6228.139,1303.075,109.363,31114.842,1710.628,692.644,set4,B.041,WK grains,WK grains,WK grains,WK grains,WK grains,WK grains (60g/L),WK grains (60g/L)
+fSB235,11704.56,14053.531,6140.14,1089.544,212.318,38228.185,1368.308,687.214,set4,B.041,WK grains,WK grains,WK grains,WK grains,WK grains,WK grains (30g/L),WK grains (30g/L)
+fSB236,11523.319,14133.525,6384.431,1111.974,197.149,43267.329,1212.499,626.075,set4,B.041,WK grains,WK grains,WK grains,WK grains,WK grains,WK grains (15g/L),WK grains (15g/L)
+fSB237,809.597,18986.762,8340.744,188.191,3237.294,35948.61,1424.689,842.59,set4,B.041,B. aquikefiricola,Br. bruxellensis,Leu. pseudomesenteroides,A. lovaniensis,none,B.041 B.bru L.pse A.lov,NA
+fSB238,6728.17,7740.6,2647.4,1457.128,1295.497,56902.569,1400.551,3667.492,set4,B.041,B. aquikefiricola,H. valbyensis,Leu. pseudomesenteroides,A. lovaniensis,none,B.041 H.val L.pse A.lov,NA
+fSB243,8445.597,4228.999,378.344,1779.694,217.466,58972.841,1457.42,754.74,set4,B.041,B. aquikefiricola,P. fermentans,Leu. pseudomesenteroides,A. orientalis,none,B.041 P.fer L.pse A.ori,NA
+fSB254,5272.474,7685.762,1724.184,1015.867,92.583,48582.359,917.014,1749.577,set4,B.041,B. aquikefiricola,H. valbyensis,Liq. satsumensis,A. lovaniensis,none,B.041 H.val L.sat A.lov,NA
+fSB255,6813.913,3225.75,513.986,1320.539,NA,57840.247,1051.589,1329.003,set4,B.041,B. aquikefiricola,P. fermentans,Liq. satsumensis,A. lovaniensis,none,B.041 P.fer L.sat A.lov,NA
+fSB260,7561.905,18419.093,11421.823,783.047,204.111,42340.278,439.755,857.415,set4,B.041,B. aquikefiricola,S. cerevisiae,Liq. satsumensis,A. orientalis,none,B.041 S.cer L.sat A.ori,NA
+fSB264,9428.049,16551.94,6337.291,406.532,267.211,46648.86,278.914,1260.808,set4,B.041,B. aquikefiricola,S. cerevisiae,Liq. satsumensis,G. japonicus,none,B.041 S.cer L.sat G.jap,NA
+fSB268,12527.176,16330.834,9277.887,515.181,383.957,47905.489,291.587,669.043,set4,B.041,B. aquikefiricola,S. cerevisiae,Liq. satsumensis,G. oxydans,none,B.041 S.cer L.sat G.oxy,NA
+fSB275,10090.811,2218.248,1216.362,1316.038,0,67302.228,211.759,286.918,set5,B.044+Z.mob,B. fermentum,P. fermentans,Len. hilgardii,A. lovaniensis,Z. mobilis,B.044 P.fer L.hil A.lov Z.mob,NA
+fSB278,6408.937,3221.916,351.172,1184.376,1296.664,46759.667,1364.887,2492.141,set5,B.044+Z.mob,B. fermentum,H. valbyensis,Leu. pseudomesenteroides,A. lovaniensis,Z. mobilis,B.044 H.val L.pse A.lov Z.mob,NA
+fSB285,17759.784,8295.112,3946.607,1973.714,323.326,27678.98,2172.577,1596.562,set5,B.044+Z.mob,WK grains,WK grains,WK grains,WK grains,WK grains,WK grains (120g/L),WK grains (120g/L)
+fSB286,12277.212,9353.952,3835.568,1701.73,252.069,33402.729,1907.329,1187.679,set5,B.044+Z.mob,WK grains,WK grains,WK grains,WK grains,WK grains,WK grains (60g/L),WK grains (60g/L)
+fSB287,14398.698,10401.283,4893.321,1442.685,143.595,40823.774,1554.678,966.413,set5,B.044+Z.mob,WK grains,WK grains,WK grains,WK grains,WK grains,WK grains (30g/L),WK grains (30g/L)
+fSB288,10476.568,10577.171,3806.004,1402.733,187.973,46556.071,1290.245,1277.378,set5,B.044+Z.mob,WK grains,WK grains,WK grains,WK grains,WK grains,WK grains (15g/L),WK grains (15g/L)
+fSB291,7888.34,1434.229,572.162,1167.605,64.16,55698.455,329.315,529.223,set5,B.044+Z.mob,B. fermentum,P. fermentans,Lac. paracasei,A. orientalis,Z. mobilis,B.044 P.fer L.par A.ori Z.mob,NA
+fSB297,5411.63,5511.83,256.24,113.749,2274.763,38295.152,756.575,2305.411,set5,B.044+Z.mob,B. fermentum,Br. bruxellensis,Leu. pseudomesenteroides,A. orientalis,Z. mobilis,B.044 B.bru L.pse A.ori Z.mob,NA
+fSB298,8950.28,3714.423,483.378,967.467,1128.067,54624.689,844.413,4116.397,set5,B.044+Z.mob,B. fermentum,H. valbyensis,Leu. pseudomesenteroides,A. orientalis,Z. mobilis,B.044 H.val L.pse A.ori Z.mob,NA
+fSB302,11046.343,3931.687,1645.153,600.177,0,57731.211,1017.467,2666.184,set5,B.044+Z.mob,B. fermentum,H. valbyensis,Liq. satsumensis,A. orientalis,Z. mobilis,B.044 H.val L.sat A.ori Z.mob,NA
+fSB306,7973.258,2834.693,2467.164,352.788,0,66757.309,335.212,3660.984,set5,B.044+Z.mob,B. fermentum,H. valbyensis,Lac. paracasei,G. japonicus,Z. mobilis,B.044 H.val L.par G.jap Z.mob,NA
+fSB314,6143.041,4510.517,912.751,654.341,1169.481,59352.58,1145.189,3548.774,set5,B.044+Z.mob,B. fermentum,H. valbyensis,Leu. pseudomesenteroides,G. japonicus,Z. mobilis,B.044 H.val L.pse G.jap Z.mob,NA
+fSB319,8034.22,1816.926,381.931,953.603,NA,63924.256,613.241,2844.316,set5,B.044+Z.mob,B. fermentum,P. fermentans,Liq. satsumensis,G. japonicus,Z. mobilis,B.044 P.fer L.sat G.jap Z.mob,NA
+fSB322,8792.072,4486.954,1447.611,338.714,0,69076.83,371.029,954.241,set5,B.044+Z.mob,B. fermentum,H. valbyensis,Lac. paracasei,G. oxydans,Z. mobilis,B.044 H.val L.par G.oxy Z.mob,NA
+fSB324,13912.532,21430.296,10772.865,499.934,206.759,28928.321,406.455,1452.716,set5,B.044+Z.mob,B. fermentum,S. cerevisiae,Lac. paracasei,G. oxydans,Z. mobilis,B.044 S.cer L.par G.oxy Z.mob,NA
+fSB328,15700.959,16024.36,7058.071,550.512,268.116,36177.649,383.877,870.503,set5,B.044+Z.mob,B. fermentum,S. cerevisiae,Len. hilgardii,G. oxydans,Z. mobilis,B.044 S.cer L.hil G.oxy Z.mob,NA
+fSB335,10949.316,2880.402,1848.31,1179.874,290.292,61949.227,668.899,324.28,set5,B.044+Z.mob,B. fermentum,P. fermentans,Liq. satsumensis,G. oxydans,Z. mobilis,B.044 P.fer L.sat G.oxy Z.mob,NA
+media1,116.853,9579.834,10284.136,257.964,312.135,83955.175,NA,NA,set1,B.044,media,media,media,media,media,media,NA
+media10,0,9080.413,11824.683,490.084,0,74686.373,30.517,48.234,set4,B.041,media,media,media,media,media,media,NA
+media11,218.946,8595.54,9256.611,134.677,84.169,64538.73,136.924,NA,set4,B.041,media,media,media,media,media,media,NA
+media13,157.378,9518.445,10348.936,129.449,0,75992.432,27.7,81.463,set5,B.044+Z.mob,media,media,media,media,media,media,NA
+media14,302.152,7977.774,8410.72,166.334,109.491,63806.994,590.335,NA,set5,B.044+Z.mob,media,media,media,media,media,media,NA
+media2,309.209,8902.016,10280.191,178.687,78.356,79573.046,182.113,NA,set1,B.044,media,media,media,media,media,media,NA
+media7,0,12610.662,14981.4,258.691,0,100623.265,46.448,49.185,set3,B.041+Z.mob,media,media,media,media,media,media,NA
+media8,227.335,7987.961,8490.044,110.397,NA,63703.897,179.553,NA,set3,B.041+Z.mob,media,media,media,media,media,media,NA
