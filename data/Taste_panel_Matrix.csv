@@ -1,0 +1,7 @@
+"sample","B.fer","B.acola","S.cer","H.val","P.fer","L.hil","L.par","L.sat","A.lov","G.oxy","G.jap","Z.mob","Grains"
+"B.fer S.cer L.hil G.oxy",1,0,1,0,0,1,0,0,0,1,0,0,0
+"B.fer H.val L.par G.jap Z.mob",1,0,0,1,0,0,1,0,0,0,1,1,0
+"B.acola S.cer L.sat G.jap",0,1,1,0,0,0,0,1,0,0,1,0,0
+"B.acola S.cer L.sat G.jap Z.mob",0,1,1,0,0,0,0,1,0,0,1,1,0
+"WK grains (30g/L)",0,0,0,0,0,0,0,0,0,0,0,0,1
+"B.fer P.fer L.hil A.lov Z.mob",1,0,0,0,1,1,0,0,1,0,0,1,0
