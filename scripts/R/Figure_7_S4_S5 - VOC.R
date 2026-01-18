@@ -79,7 +79,7 @@ VOC_barplot <- ggplot(df_VOC_long, aes(x = sample_name, y = mean_abundance, fill
   )
 
 ggsave(
-  here("output", "FigureS14 - VOC barplot.pdf"), 
+  here("output", "FigureS4 - VOC barplot.pdf"), 
   plot = VOC_barplot, 
   scale = 1,  width =17, height = 14, units = 'cm', dpi = 900)
 
@@ -114,7 +114,7 @@ VOC_barplot_top7 <- ggplot(df_VOC_long_top7, aes(x = sample_name, y = mean_abund
   )
 
 ggsave(
-  filename = here("output", "FigureS15 - VOC top 7.pdf"), 
+  filename = here("output", "FigureS5 - VOC top 7.pdf"), 
   plot = VOC_barplot_top7, 
   scale = 1,  width =17, height = 14, units = 'cm', dpi = 900)
 

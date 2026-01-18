@@ -266,7 +266,7 @@ final_plot_Bif <- (combined_plot_Bif1 | combined_plot_Bif2) +
 print(final_plot_Bif)
 
 ggsave(
-  filename = here("output", "FigureS19 - Bif Metabolites.pdf"),
+  filename = here("output", "FigureS9 - Bif Metabolites.pdf"),
   plot = final_plot_Bif,
   width = 8,   # adjust depending on your plot size
   height = 35,

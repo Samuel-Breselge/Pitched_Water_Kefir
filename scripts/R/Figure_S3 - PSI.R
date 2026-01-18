@@ -47,7 +47,7 @@ ggplot(df_01, aes(x = time_in_days, y = `psi normalized at 23C`, group = yeast, 
 
 # Save the plot as a PDF
 ggsave(
-  here("output", "FigureS13 - PSI.pdf"), 
+  here("output", "FigureS3 - PSI.pdf"), 
   width = 12, height = 6, device = "pdf")
 
 

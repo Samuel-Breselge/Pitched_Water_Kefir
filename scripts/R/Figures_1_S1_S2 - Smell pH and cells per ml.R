@@ -325,7 +325,7 @@ combined_plot <- wrap_plots(plot_list, ncol = 5) +
   plot_annotation(tag_levels = "a")
 
 ggsave(
-  filename = here("output", "FigureS12 cells per ml.pdf"),
+  filename = here("output", "FigureS2 cells per ml.pdf"),
   combined_plot,
   width  = 18,
   height = 10
@@ -483,7 +483,7 @@ combined_plot <- wrap_plots(plot_list, ncol = 5) +
   plot_annotation(tag_levels = "a")
 
 ggsave(
-  filename = here("output", "FigureS11 pH.pdf"),
+  filename = here("output", "FigureS1 pH.pdf"),
   combined_plot,
   width  = 18,
   height = 10
