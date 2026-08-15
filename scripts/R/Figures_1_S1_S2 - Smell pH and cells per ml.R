@@ -189,7 +189,7 @@ for (chem in measurement_column) {
       ) +
       theme_bw() +
       xlab("") +
-      ylab(chem) +
+      ylab("Mean aroma score") +
       labs(subtitle = subtitle_text) +
       theme(
         axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
@@ -214,7 +214,7 @@ ggsave(
 )
 
 
-#### Figure S12: cells/ml ----
+#### Figure S2: cells/ml ----
 
 df_04 <- df_selected_set %>%
   filter(`combined name short` != "media") %>%
@@ -247,6 +247,12 @@ for (chem in measurement_column) {
   for (group in grouping_variables) {
     
     if (length(unique(df_04[[group]])) <= 1) next
+    
+    y_axis_label <- if (chem == "cells_per_ml_day0") {
+      "Cells per mL (day 0)"
+    } else {
+      "Cells per mL (day 3)"
+    }
     
     res.kruskal <- df_04 %>%
       kruskal_test(reformulate(group, response = chem))
@@ -307,7 +313,7 @@ for (chem in measurement_column) {
       ) +
       theme_bw() +
       xlab("") +
-      ylab(chem) +
+      ylab(y_axis_label) +
       labs(subtitle = subtitle_text) +
       scale_y_log10(limits = c(1e6, 1e9)) +
       theme(
@@ -332,7 +338,7 @@ ggsave(
 )
 
 
-#### Figure S11: pH ----
+#### Figure S1: pH ----
 
 df_selected_set <- df_01 %>%
   filter(`experimental set` %in% c("set1", "set3", "set4", "set5"))
@@ -408,6 +414,12 @@ for (chem in measurement_column) {
     
     if (length(unique(df_04[[group]])) <= 1) next
     
+    y_axis_label <- if (chem == "pH_day0") {
+      "pH (day 0)"
+    } else {
+      "pH (day 3)"
+    }
+    
     res.kruskal <- df_04 %>%
       kruskal_test(reformulate(group, response = chem))
     
@@ -466,7 +478,7 @@ for (chem in measurement_column) {
       ) +
       theme_bw() +
       xlab("") +
-      ylab(chem) +
+      ylab(y_axis_label) +
       labs(subtitle = subtitle_text) +
       theme(
         axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),

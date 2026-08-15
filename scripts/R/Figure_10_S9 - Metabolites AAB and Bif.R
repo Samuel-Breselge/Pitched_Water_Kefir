@@ -113,7 +113,7 @@ for (chem in chemical_columns) {
                 vjust = 0, fontface = "bold") +
       theme_bw() +
       xlab("") +
-      ylab(paste(chem, "in µg/ml")) +
+      ylab(paste(gsub("_", " ", chem), "(µg/mL)")) +
       labs(#caption = caption_text, 
         subtitle = subtitle_text
       ) +
@@ -237,7 +237,7 @@ for (chem in chemical_columns) {
                 vjust = 0, fontface = "bold") +
       theme_bw() +
       xlab("") +
-      ylab(paste(chem, "in µg/ml")) +
+      ylab(paste(gsub("_", " ", chem), "(µg/mL)")) +
       labs(#caption = caption_text, 
         subtitle = subtitle_text
       ) +
@@ -392,7 +392,7 @@ for (chem in chemical_columns) {
                 vjust = 0, fontface = "bold") +
       theme_bw() +
       xlab("") +
-      ylab(paste(chem, "in µg/ml")) +
+      ylab(paste(gsub("_", " ", chem), "(µg/mL)")) +
       labs(#caption = caption_text, 
         subtitle = subtitle_text
       ) +
@@ -516,7 +516,7 @@ for (chem in chemical_columns) {
                 vjust = 0, fontface = "bold") +
       theme_bw() +
       xlab("") +
-      ylab(paste(chem, "in µg/ml")) +
+      ylab(paste(gsub("_", " ", chem), "(µg/mL)")) +
       labs(#caption = caption_text, 
         subtitle = subtitle_text
       ) +

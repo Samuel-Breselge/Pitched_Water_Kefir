@@ -118,7 +118,7 @@ for (descriptor in descriptor_column) {
                 vjust = 0, fontface = "bold") +
       theme_bw() +
       xlab("") +
-      ylab(descriptor) +
+      ylab(gsub("_", " ", descriptor)) +
       labs(subtitle = subtitle_text) +
       theme(
         axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
@@ -252,7 +252,7 @@ for (descriptor in descriptor_column) {
                 vjust = 0, fontface = "bold") +
       theme_bw() +
       xlab("") +
-      ylab(descriptor) +
+      ylab(gsub("_", " ", descriptor)) +
       labs(subtitle = subtitle_text) +
       theme(
         axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),

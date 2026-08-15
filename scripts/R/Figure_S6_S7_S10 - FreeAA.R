@@ -64,7 +64,7 @@ df_00 = read.csv(here("data", "Data_FreeAA.csv"), check.names = F)
     labs(
       #title = "Free Amino Acid Composition per Condition",
       x = "",
-      y = "Free Amino Acid Content (nmol/ml)",
+      y = "Free amino acid content (nmol/ml)",
       fill = "Amino Acid"
     ) +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))  # improve readability
@@ -150,7 +150,7 @@ df_00 = read.csv(here("data", "Data_FreeAA.csv"), check.names = F)
                   vjust = 0, fontface = "bold") +
         theme_bw() +
         xlab("") +
-        ylab(paste(chem, "in nmol/ml")) +
+        ylab(paste(gsub("_", " ", chem), "(nmol/ml)")) +
         labs(#caption = caption_text, 
           subtitle = subtitle_text
         ) +
@@ -205,7 +205,7 @@ p2 <- ggplot(df_long, aes(x = short_name, y = amount, fill = amino_acid)) +
   labs(
     #title = "Free Amino Acid Composition per Condition",
     x = "",
-    y = "Free Amino Acid Content (nmol/ml)",
+    y = "Free amino acid content (nmol/ml)",
     fill = "Amino Acid"
   ) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))  # improve readability
@@ -290,7 +290,7 @@ for (chem in chemical_columns) {
                 vjust = 0, fontface = "bold") +
       theme_bw() +
       xlab("") +
-      ylab(paste(chem, "in nmol/ml")) +
+      ylab(paste(gsub("_", " ", chem), "(nmol/ml)")) +
       labs(#caption = caption_text, 
         subtitle = subtitle_text
       ) +
@@ -363,7 +363,7 @@ p3 <- ggplot(df_long, aes(x = short_name, y = amount, fill = amino_acid)) +
   labs(
     #title = "Free Amino Acid Composition per Condition",
     x = "",
-    y = "Free Amino Acid Content (nmol/ml)",
+    y = "Free amino acid content (nmol/ml)",
     fill = "Amino Acid"
   ) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))  # improve readability
@@ -448,7 +448,7 @@ for (chem in chemical_columns) {
                 vjust = 0, fontface = "bold") +
       theme_bw() +
       xlab("") +
-      ylab(paste(chem, "in nmol/ml")) +
+      ylab(paste(gsub("_", " ", chem), "(nmol/ml)")) +
       labs(#caption = caption_text, 
         subtitle = subtitle_text
       ) +
@@ -501,7 +501,7 @@ p4 <- ggplot(df_long, aes(x = short_name, y = amount, fill = amino_acid)) +
   labs(
     #title = "Free Amino Acid Composition per Condition",
     x = "",
-    y = "Free Amino Acid Content (nmol/ml)",
+    y = "Free amino acid cContent (nmol/ml)",
     fill = "Amino Acid"
   ) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))  # improve readability
@@ -586,7 +586,7 @@ for (chem in chemical_columns) {
                 vjust = 0, fontface = "bold") +
       theme_bw() +
       xlab("") +
-      ylab(paste(chem, "in µg/ml")) +
+      ylab(paste(gsub("_", " ", chem), "(nmol/ml)")) +
       labs(#caption = caption_text, 
         subtitle = subtitle_text
       ) +

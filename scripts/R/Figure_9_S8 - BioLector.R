@@ -136,7 +136,7 @@ p1_AAB_biomass <- ggplot() +
     aes(x = `Time[h]`, y = mean_Biomass, colour = combination),
     linewidth = 1
   ) +
-  labs(x = "Time [h]", y = "Biomass in RU", title = "c") +
+  labs(x = "Time [h]", y = "Biomass (RU)", title = "c") +
   ylim(200, 1400) +
   theme_bw()
 
@@ -169,7 +169,7 @@ p2_AAB_biomass <- ggplot() +
     aes(x = `Time[h]`, y = mean_Biomass, colour = combination),
     linewidth = 1
   ) +
-  labs(x = "Time [h]", y = "Biomass in RU", title = "d") +
+  labs(x = "Time [h]", y = "Biomass (RU)", title = "d") +
   ylim(200, 1400) +
   theme_bw()
 
@@ -204,7 +204,7 @@ p1_AAB_DO <- ggplot() +
     aes(x = `Time[h]`, y = mean_DO, colour = combination),
     linewidth = 1
   ) +
-  labs(x = "Time [h]", y = "Dissolved Oxygen", title = "e") +
+  labs(x = "Time [h]", y = "Dissolved oxygen (%)", title = "e") +
   theme_bw()
 
 p1_AAB_DO
@@ -236,7 +236,7 @@ p2_AAB_DO <- ggplot() +
     aes(x = `Time[h]`, y = mean_DO, colour = combination),
     linewidth = 1
   ) +
-  labs(x = "Time [h]", y = "Dissolved Oxygen", title = "f") +
+  labs(x = "Time [h]", y = "Dissolved oxygen (%)", title = "f") +
   theme_bw()
 
 p2_AAB_DO
@@ -365,7 +365,7 @@ p1_Bif_biomass <- ggplot() +
     aes(x = `Time[h]`, y = mean_Biomass, colour = combination),
     linewidth = 1
   ) +
-  labs(x = "Time [h]", y = "Biomass in RU", title = "c") +
+  labs(x = "Time [h]", y = "Biomass (RU)", title = "c") +
   ylim(200, 1400) +
   theme_bw()
 
@@ -403,7 +403,7 @@ p2_Bif_biomass <- ggplot() +
     aes(x = `Time[h]`, y = mean_Biomass, colour = combination),
     linewidth = 1
   ) +
-  labs(x = "Time [h]", y = "Biomass in RU", title = "d") +
+  labs(x = "Time [h]", y = "Biomass (RU)", title = "d") +
   ylim(200, 1400) +
   theme_bw()
 
@@ -443,7 +443,7 @@ p1_Bif_DO <- ggplot() +
     aes(x = `Time[h]`, y = mean_DO, colour = combination),
     linewidth = 1
   ) +
-  labs(x = "Time [h]", y = "Dissolved Oxygen", title = "e") +
+  labs(x = "Time [h]", y = "Dissolved oxygen (%)", title = "e") +
   theme_bw()
 
 p1_Bif_DO
@@ -480,7 +480,7 @@ p2_Bif_DO <- ggplot() +
     aes(x = `Time[h]`, y = mean_DO, colour = combination),
     linewidth = 1
   ) +
-  labs(x = "Time [h]", y = "Dissolved Oxygen", title = "f") +
+  labs(x = "Time [h]", y = "Dissolved oxygen (%)", title = "f") +
   theme_bw()
 
 p2_Bif_DO

@@ -68,7 +68,7 @@ VOC_barplot <- ggplot(df_VOC_long, aes(x = sample_name, y = mean_abundance, fill
   #facet_wrap(~ class, scales = "free_y") +  # free_y allows each facet to scale independently
   labs(
     x = "",
-    y = "Mean Abundance in RU",
+    y = "Mean abundance (RU)",
     fill = "Chemical Class",
     title = ""
   ) +
@@ -102,7 +102,7 @@ VOC_barplot_top7 <- ggplot(df_VOC_long_top7, aes(x = sample_name, y = mean_abund
   geom_bar(stat = "identity") +
   labs(
     x = "",
-    y = "Mean Abundance in RU",
+    y = "Mean abundance (RU)",
     fill = "Chemical",
     title = ""
   ) +

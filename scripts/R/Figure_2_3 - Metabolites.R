@@ -149,7 +149,7 @@ for (chem in chemical_columns) {
       ) +
       theme_bw() +
       xlab("") +
-      ylab(paste(chem, "in µg/ml")) +
+      ylab(paste(gsub("_", " ", chem), "(µg/mL)")) +
       labs(subtitle = subtitle_text) +
       theme(
         axis.text.x    = element_text(angle = 90, vjust = 0.5, hjust = 1),
@@ -244,7 +244,7 @@ for (chem in chemical_columns) {
       ) +
       theme_bw() +
       xlab("") +
-      ylab(paste(chem, "in µg/ml")) +
+      ylab(paste(gsub("_", " ", chem), "(µg/mL)")) +
       labs(subtitle = subtitle_text) +
       theme(
         axis.text.x    = element_text(angle = 90, vjust = 0.5, hjust = 1),
