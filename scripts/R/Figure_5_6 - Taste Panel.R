@@ -104,7 +104,7 @@ for (descriptor in descriptor_column) {
     
     # Merge for label positioning
     cld_df <- left_join(cld_df, summary_df, by = group)
-    cld_df$y <- cld_df$mean + cld_df$sem + 0.5  # Offset for label position
+    cld_df$y <- max(df_01[[descriptor]], na.rm = TRUE) + 0.5  # Offset for label position
     
     # Generate subtitle and caption
     subtitle_text <- get_test_label(res.kruskal, detailed = TRUE)
@@ -113,6 +113,18 @@ for (descriptor in descriptor_column) {
     # Build barplot with SEM
     p <- ggplot(summary_df, aes_string(x = group, y = "mean")) +
       geom_bar(stat = "identity", fill = "skyblue") +
+      geom_point(
+        data = df_01,
+        aes(
+          x = .data[[group]],
+          y = .data[[descriptor]]
+        ),
+        inherit.aes = FALSE,
+        position = position_jitter(width = 0.18, height = 0, seed = 123),
+        colour = "grey35",
+        alpha = 0.4,
+        size = 1.2
+      ) +
       geom_errorbar(aes(ymin = mean - sem, ymax = mean + sem), width = 0.2) +
       geom_text(data = cld_df, aes_string(x = group, y = "y", label = "label"),
                 vjust = 0, fontface = "bold") +
@@ -238,7 +250,7 @@ for (descriptor in descriptor_column) {
     
     # Merge for label positioning
     cld_df <- left_join(cld_df, summary_df, by = group)
-    cld_df$y <- cld_df$mean + cld_df$sem + 0.5  # Offset for label position
+    cld_df$y <- max(df_01[[descriptor]], na.rm = TRUE) + 0.5  # Offset for label position
     
     # Generate subtitle and caption
     subtitle_text <- get_test_label(res.kruskal, detailed = TRUE)
@@ -247,6 +259,18 @@ for (descriptor in descriptor_column) {
     # Build barplot with SEM
     p <- ggplot(summary_df, aes_string(x = group, y = "mean")) +
       geom_bar(stat = "identity", fill = "skyblue") +
+      geom_point(
+        data = df_01,
+        aes(
+          x = .data[[group]],
+          y = .data[[descriptor]]
+        ),
+        inherit.aes = FALSE,
+        position = position_jitter(width = 0.18, height = 0, seed = 123),
+        colour = "grey35",
+        alpha = 0.4,
+        size = 1.2
+      ) +
       geom_errorbar(aes(ymin = mean - sem, ymax = mean + sem), width = 0.2) +
       geom_text(data = cld_df, aes_string(x = group, y = "y", label = "label"),
                 vjust = 0, fontface = "bold") +
@@ -273,5 +297,5 @@ combined_barplot_Optimized_Descriptive_Test <- wrap_plots(plot_list, ncol = 4) +
 ggsave(
   filename = here("output", "Figure6.pdf"), 
        combined_barplot_Optimized_Descriptive_Test, 
-       width = 16, height = 20)
+       width = 16, height = 23)
 
