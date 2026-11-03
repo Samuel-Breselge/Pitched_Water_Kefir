@@ -137,7 +137,7 @@ combined_barplot_Sensory_Acceptance_Test <- wrap_plots(plot_list, ncol = 5) +
 
 # Save
 ggsave(
-  filename = here("output", "Figure4.pdf")  , 
+  filename = here("output", "Figure5.pdf")  , 
   combined_barplot_Sensory_Acceptance_Test, 
   width = 20, height = 8)
 
@@ -271,7 +271,7 @@ combined_barplot_Optimized_Descriptive_Test <- wrap_plots(plot_list, ncol = 4) +
 
 # Save
 ggsave(
-  filename = here("output", "Figure5.pdf"), 
+  filename = here("output", "Figure6.pdf"), 
        combined_barplot_Optimized_Descriptive_Test, 
        width = 16, height = 20)
 

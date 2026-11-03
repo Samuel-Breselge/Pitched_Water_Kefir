@@ -24,6 +24,8 @@ df_01$short_name <- factor(df_01$short_name, levels = c(
   "WK grains (30g/L)"
 ))
 
+df_01 <- df_01 %>%
+  mutate(Fermentation = factor(fermenation, levels = c("A", "B")))
 
 #### 
 chemical_columns <- c("Sucrose", "Glucose", "Fructose", "Ethanol", "Glycerol", "Lactic_Acid", "Acetic_Acid")
@@ -101,7 +103,19 @@ for (chem in chemical_columns) {
     # Build the plot
     p <- ggplot(df_01, aes_string(x = group, y = chem)) +
       geom_boxplot(outlier.shape = NA,  fill = "lightblue") +
-      geom_jitter(width = 0.2, alpha = 0.4) +
+      geom_jitter(
+        aes(shape = Fermentation),
+        width = 0.2,
+        height = 0,
+        size = 2,
+        alpha = 0.75
+      ) +
+      scale_shape_manual(values = c("A" = 16, "B" = 17)) +
+      guides(shape = "none") +
+      scale_shape_manual(
+        name = "Independent fermentation",
+        values = c(16, 17)  # Circle and triangle
+      ) +
       geom_text(data = cld_df, aes_string(x = group, y = "y", label = "label"),
                 vjust = 0, fontface = "bold") +
       theme_bw() +
@@ -130,7 +144,7 @@ final_plot_taste_panel <- (combined_plot_taste_panel) +
 
 # Save
 ggsave(
-  filename = here("output", "Figure6.pdf"),
+  filename = here("output", "FigureS4.pdf"),
   final_plot_taste_panel, 
   width = 15, height = 12)
 

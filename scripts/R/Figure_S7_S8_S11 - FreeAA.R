@@ -318,7 +318,7 @@ final_plot_Bif <- (combined_plot_Bif1 / combined_plot_Bif2) +
 print(final_plot_Bif)
 
 ggsave(
-  filename = here("output","FigureS10 - Bif FreeAA.pdf"),
+  filename = here("output","FigureS11 - Bif FreeAA.pdf"),
   plot = final_plot_Bif,
   width = 18,   # adjust depending on your plot size
   height = 30,
@@ -609,7 +609,7 @@ final_plot_AAB <- (combined_plot_AAB1 / combined_plot_AAB2) +
   plot_annotation(tag_levels = '1')  
 
 ggsave(
-  filename = here("output", "FigureS7 - AAB FreeAA.pdf"),
+  filename = here("output", "FigureS8 - AAB FreeAA.pdf"),
   plot = final_plot_AAB,
   width = 18,   # adjust depending on your plot size
   height = 30,
@@ -634,6 +634,6 @@ combined_plot <- combined_plot +
 # Print and save
 print(combined_plot)
 ggsave(
-  filename = here("output", "FigureS6 - FreeAA.pdf"), 
+  filename = here("output", "FigureS7 - FreeAA.pdf"), 
   combined_plot, width = 10, height = 12, dpi = 600)
 

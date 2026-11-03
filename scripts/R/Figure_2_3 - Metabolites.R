@@ -8,7 +8,7 @@ library(patchwork)     # wrap_plots(), plot_annotation()
 library(here)
 
 # Data import ----
-df_metabolites <- read_csv(here("data", "Data_Metabolites.csv"))
+df_metabolites <- read_csv(here("data", "Data_metabolites.csv"))
 
 # Global factor level definitions ----
 yeast_levels <- c(
@@ -61,6 +61,34 @@ df_metabolites <- df_metabolites %>%
     AAB   = factor(AAB,   levels = aab_levels),
     other = factor(other, levels = other_levels)
   )
+
+# Yeast colours matching the PCA
+yeast_colours <- c(
+  "media"            = "grey60",
+  "Br. bruxellensis" = "#F8766D",  # Salmon
+  "H. valbyensis"    = "#7CAE00",  # Green
+  "P. fermentans"    = "#00BFC4",  # Blue/turquoise
+  "S. cerevisiae"    = "#C77CFF",  # Purple
+  "WK grains"       = "black"
+)
+
+# Grain concentration symbols matching the PCA
+df_metabolites <- df_metabolites %>%
+  mutate(
+    Grain_symbol = if_else(
+      Yeast == "WK grains",
+      paste0("grains_", readr::parse_number(as.character(grains))),
+      "Other"
+    )
+  )
+
+grain_shapes <- c(
+  "Other"      = 16,  # Circle
+  "grains_15"  = 17,  # Triangle
+  "grains_30"  = 15,  # Square
+  "grains_60"  = 18,  # Diamond
+  "grains_120" = 8    # Star
+)
 
 # Replace ND with 0 for key metabolites ----
 df_metabolites$Mannitol[is.na(df_metabolites$Mannitol)]       <- 0
@@ -139,8 +167,16 @@ for (chem in chemical_columns) {
     
     p <- ggplot(df_metabolites, aes_string(x = group, y = chem)) +
       geom_boxplot(outlier.shape = NA, fill = "lightblue") +
-      geom_jitter(aes(color = grains), width = 0.2, alpha = 0.4) +
-      guides(color = "none") +
+      geom_jitter(
+        aes(colour = Yeast, shape = Grain_symbol),
+        width = 0.2,
+        height = 0,
+        size = 2,
+        alpha = 0.30
+      ) +
+      scale_colour_manual(values = yeast_colours) +
+      scale_shape_manual(values = grain_shapes) +
+      guides(colour = "none", shape = "none") +
       geom_text(
         data = cld_df,
         aes_string(x = group, y = "y", label = "label"),
@@ -234,8 +270,16 @@ for (chem in chemical_columns) {
     
     p <- ggplot(df_metabolites, aes_string(x = group, y = chem)) +
       geom_boxplot(outlier.shape = NA, fill = "lightblue") +
-      geom_jitter(aes(color = grains), width = 0.2, alpha = 0.4) +
-      guides(color = "none") +
+      geom_jitter(
+        aes(colour = Yeast, shape = Grain_symbol),
+        width = 0.2,
+        height = 0,
+        size = 2,
+        alpha = 0.30
+      ) +
+      scale_colour_manual(values = yeast_colours) +
+      scale_shape_manual(values = grain_shapes) +
+      guides(colour = "none", shape = "none") +
       geom_text(
         data = cld_df,
         aes_string(x = group, y = "y", label = "label"),

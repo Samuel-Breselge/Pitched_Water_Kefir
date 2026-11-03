@@ -34,6 +34,23 @@ df_01$AAB <- gsub("Gluconobacter oxydans \\(A4\\)", "G. oxydans", df_01$AAB)
 
 df_01$other <- gsub("Zymomonas mobilis \\(Z1\\)", "Z. mobilis", df_01$other)
 
+yeast_colours <- c(
+  "media"            = "grey60",
+  "Br. bruxellensis" = "#F8766D",
+  "H. valbyensis"    = "#7CAE00",
+  "P. fermentans"    = "#00BFC4",
+  "S. cerevisiae"    = "#C77CFF",
+  "WK grains"       = "black"
+)
+
+grain_shapes <- c(
+  "Other"      = 16,  # Circle
+  "grains_15"  = 17,  # Triangle
+  "grains_30"  = 15,  # Square
+  "grains_60"  = 18,  # Diamond
+  "grains_120" = 8    # Star
+)
+
 # Experimental set selection ----
 df_selected_set <- df_01 %>%
   filter(`experimental set` %in% c("set1", "set3", "set4", "set5"))
@@ -109,11 +126,17 @@ df_02 <- df_selected_set %>%
 df_04 <- df_02 %>%
   rename(smell_z_score = `smell z-score`)
 
-df_04$grains <- ifelse(
-  grepl("^WK grains", df_04$`combined name short`),
-  df_04$`combined name short`,
-  NA
-)
+df_04 <- df_04 %>%
+  mutate(
+    Grain_symbol = if_else(
+      grepl("^WK grains", `combined name short`),
+      paste0(
+        "grains_",
+        readr::parse_number(as.character(`combined name short`))
+      ),
+      "Other"
+    )
+  )
 
 measurement_column <- c("average_pannel")
 grouping_variables <- c("Yeast", "Bif", "LAB", "AAB", "other")
@@ -179,8 +202,16 @@ for (chem in measurement_column) {
     # Plot
     p <- ggplot(df_04, aes_string(x = group, y = chem)) +
       geom_boxplot(outlier.shape = NA, fill = "lightblue") +
-      geom_jitter(aes(color = grains), width = 0.2, alpha = 0.4) +
-      guides(color = "none") +
+      geom_jitter(
+        aes(colour = Yeast, shape = Grain_symbol),
+        width = 0.2,
+        height = 0,
+        size = 2,
+        alpha = 0.30
+      ) +
+      scale_colour_manual(values = yeast_colours) +
+      scale_shape_manual(values = grain_shapes) +
+      guides(colour = "none", shape = "none") +
       geom_text(
         data = cld_df,
         aes_string(x = group, y = "y", label = "label"),
@@ -223,11 +254,17 @@ df_04 <- df_selected_set %>%
     cells_per_ml_day0 = `events/ml (day0)`
   )
 
-df_04$grains <- ifelse(
-  grepl("^WK grains", df_04$`combined name short`),
-  df_04$`combined name short`,
-  NA
-)
+df_04 <- df_04 %>%
+  mutate(
+    Grain_symbol = if_else(
+      grepl("^WK grains", `combined name short`),
+      paste0(
+        "grains_",
+        readr::parse_number(as.character(`combined name short`))
+      ),
+      "Other"
+    )
+  )
 
 df_summary_cells_0h <- df_04 %>%
   group_by(`combined name short`) %>%
@@ -302,8 +339,16 @@ for (chem in measurement_column) {
     
     p <- ggplot(df_04, aes_string(x = group, y = chem)) +
       geom_boxplot(outlier.shape = NA, fill = "lightblue") +
-      geom_jitter(aes(color = grains), width = 0.2, alpha = 0.4) +
-      guides(color = "none") +
+      geom_jitter(
+        aes(colour = Yeast, shape = Grain_symbol),
+        width = 0.2,
+        height = 0,
+        size = 2,
+        alpha = 0.30
+      ) +
+      scale_colour_manual(values = yeast_colours) +
+      scale_shape_manual(values = grain_shapes) +
+      guides(colour = "none", shape = "none") +
       geom_hline(yintercept = 2e6, linetype = "dashed", color = "red") +
       geom_text(
         data = cld_df,
@@ -391,11 +436,17 @@ df_selected_set$other <- factor(
 
 df_04 <- df_selected_set
 
-df_04$grains <- ifelse(
-  grepl("^WK grains", df_04$`combined name short`),
-  df_04$`combined name short`,
-  NA
-)
+df_04 <- df_04 %>%
+  mutate(
+    Grain_symbol = if_else(
+      grepl("^WK grains", `combined name short`),
+      paste0(
+        "grains_",
+        readr::parse_number(as.character(`combined name short`))
+      ),
+      "Other"
+    )
+  )
 
 df_04 <- df_04 %>%
   rename(
@@ -468,8 +519,16 @@ for (chem in measurement_column) {
     
     p <- ggplot(df_04, aes_string(x = group, y = chem)) +
       geom_boxplot(outlier.shape = NA, fill = "lightblue") +
-      geom_jitter(aes(color = grains), width = 0.2, alpha = 0.4) +
-      guides(color = "none") +
+      geom_jitter(
+        aes(colour = Yeast, shape = Grain_symbol),
+        width = 0.2,
+        height = 0,
+        size = 2,
+        alpha = 0.30
+      ) +
+      scale_colour_manual(values = yeast_colours) +
+      scale_shape_manual(values = grain_shapes) +
+      guides(colour = "none", shape = "none") +
       geom_text(
         data = cld_df,
         aes_string(x = group, y = "y", label = "label"),

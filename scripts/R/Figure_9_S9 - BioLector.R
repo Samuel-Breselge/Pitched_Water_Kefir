@@ -492,5 +492,5 @@ combined_plot <- (p1_Bif_pH | p2_Bif_pH) /
 
 # Save to PDF
 ggsave(
-  filename = here("output", "FigureS8 - Bifs BioLector.pdf"), 
+  filename = here("output", "FigureS9 - Bifs BioLector.pdf"), 
   combined_plot, width = 12, height = 9)
